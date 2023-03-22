@@ -1,7 +1,7 @@
 import React from "react";
 import useForm from "./useForm";
 
-function TExtArea() {
+function TextArea() {
 	const { values, handleChange, resetForm } = useForm({
 		name: "",
 		email: "",
@@ -18,33 +18,6 @@ function TExtArea() {
 	return (
 		<form onSubmit={handleSubmit}>
 			<label>
-				Name:
-				<input
-					type="text"
-					name="name"
-					value={values.name}
-					onChange={handleChange}
-				/>
-			</label>
-			<label>
-				Email:
-				<input
-					type="email"
-					name="email"
-					value={values.email}
-					onChange={handleChange}
-				/>
-			</label>
-			<label>
-				Password:
-				<input
-					type="password"
-					name="password"
-					value={values.password}
-					onChange={handleChange}
-				/>
-			</label>
-			<label>
 				Message:
 				<textarea
 					name="message"
@@ -52,9 +25,8 @@ function TExtArea() {
 					onChange={handleChange}
 				/>
 			</label>
-			<button type="submit">Submit</button>
 		</form>
 	);
 }
 
-export default TExtArea;
+export default TextArea;
