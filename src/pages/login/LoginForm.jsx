@@ -45,7 +45,7 @@ const Login = () => {
 						>
 							Sign In
 						</button>
-					</div>{" "}
+					</div>
 					<a
 						className="inline-block align-baseline font-bold text-sm text-green-500 hover:text-green-800"
 						href="#"
