@@ -13,9 +13,6 @@ function App() {
 					<Route path="/patient-signup" exact element={<PatientSignUpPage />} />
 					<Route path="/login" exact element={<LoginPage />} />
 					<Route path="/" element={<EnrollmentPage />} />
-					{/* <Route path="/login" element={<LoginPage />} />
-					<Route path="/login" element={<LoginPage />} /> */}
-					{/* <EnrollmentPage /> */}
 				</Routes>
 			</BrowserRouter>
 		</>
