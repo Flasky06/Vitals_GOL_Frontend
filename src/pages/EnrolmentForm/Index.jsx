@@ -3,12 +3,12 @@ import EnrolmentForm from "./Enrol";
 import PageHeader from "./PageHeader";
 
 function EnrollmentPage() {
-	return (
-		<>
-			<PageHeader />
-			<EnrolmentForm />
-		</>
-	);
+  return (
+    <>
+      <PageHeader />
+      <EnrolmentForm />
+    </>
+  );
 }
 
 export default EnrollmentPage;
