@@ -1,4 +1,4 @@
-import { BrowserRouter, Router, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Import pages
 
 import LoginPage from "./pages/login/Index";
@@ -7,13 +7,10 @@ function App() {
 	return (
 		<>
 			<BrowserRouter>
-				<Router>
-					<Route path="/login" exact element={<LoginPage />} />
+				<Routes>
+					<Route path="/login" element={<LoginPage />} />
 					<Route path="/" element={<EnrollmentPage />} />
-					{/* <Route path="/login" element={<LoginPage />} />
-					<Route path="/login" element={<LoginPage />} /> */}
-					<EnrollmentPage />
-				</Router>
+				</Routes>
 			</BrowserRouter>
 		</>
 	);

@@ -1,5 +1,6 @@
 import React from "react";
-import EnrolmentForm from "./Enrol";
+import EnrolmentForm from "./EnrollmentPage";
+
 import PageHeader from "./PageHeader";
 
 function EnrollmentPage() {
