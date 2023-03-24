@@ -40,14 +40,14 @@ const Login = () => {
 					</div>
 					<div className="flex items-center justify-between">
 						<button
-							className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+							className="bg-green-700  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline  w-full"
 							type="button"
 						>
 							Sign In
 						</button>
 					</div>
 					<a
-						className="inline-block align-baseline font-bold text-sm text-green-500 hover:text-green-800"
+						className="inline-block align-baseline font-bold text-sm text-green-800 "
 						href="#"
 					>
 						Forgot Password?
