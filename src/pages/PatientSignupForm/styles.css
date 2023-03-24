@@ -1,16 +1,16 @@
-.fix-placeholder::placeholder{
-    font-weight: bold;
-    text-transform: capitalize;
+.fix-placeholder::placeholder {
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-.fix-bg{
-    background-color: var(--color-primary-light-green);
+.fix-bg {
+  background-color: var(--color-primary-light-green);
 }
 
-.fix-display{
-    display: inline-block;
+.fix-display {
+  display: inline-block;
 }
 
-.fix-color{
-    color: var(--color-primary-light-green);
+.fix-color {
+  color: var(--color-primary-light-green);
 }

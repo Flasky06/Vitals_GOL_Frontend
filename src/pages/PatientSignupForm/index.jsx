@@ -1,11 +1,11 @@
-import React from "react"
-import PatientSignupForm from "./PatientSignupForm"
+import React from "react";
+import PatientSignupForm from "./PatientSignupForm";
 
 const PatientSignUpPage = () => {
-    return(
-        <>
-            <PatientSignupForm />
-        </>
-    )
-}
+  return (
+    <>
+      <PatientSignupForm />
+    </>
+  );
+};
 export default PatientSignUpPage;
