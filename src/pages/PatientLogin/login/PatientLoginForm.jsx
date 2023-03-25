@@ -1,10 +1,9 @@
 import React from "react";
 import useForm from "../../../hooks/useForm";
 
-function Login() {
+function PatientLoginForm() {
 	const { values, handleChange, resetForm } = useForm({
-		name: "",
-
+		userId: "",
 		password: "",
 	});
 
@@ -39,4 +38,4 @@ function Login() {
 	);
 }
 
-export default Login;
+export default PatientLoginForm;

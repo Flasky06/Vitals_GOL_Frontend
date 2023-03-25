@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Login = () => {
+const HospitalLoginForm = () => {
 	const [showPassword, setShowPassword] = useState(false);
 
 	const handleShowPassword = () => {
@@ -58,4 +58,4 @@ const Login = () => {
 	);
 };
 
-export default Login;
+export default HospitalLoginForm;

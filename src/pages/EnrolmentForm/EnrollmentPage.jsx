@@ -68,53 +68,43 @@ function EnrolmentForm() {
 	};
 
 	return (
-		<div>
+		<div className="mt-4 ">
 			<form onSubmit={handleSubmit}>
 				<div className="flex flex-row  items-center	">
-					<label
-						htmlFor="name"
-						className="block  font-semi-bold text-xl	 text-gray-700"
-					>
+					<label htmlFor="name" className="block font-medium	 mb-2">
 						Name
 					</label>
-					<div className="w-1/5 mx-6 flex flex-col items-center">
+					<div className="w-2/5 mx-6 flex flex-col items-center">
 						<input
 							type="text"
 							name="firstName"
 							id="firstName"
-							className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-black  px-3 py-1 "
+							placeholder="Enter first name"
+							className="mt-1 block w-full p-1 rounded-md shadow-sm outline outline-1  "
 							value={formData.firstName}
 							onChange={handleChange}
 							required
 						/>
-						<label htmlFor="firstName" className="block  text-gray-700">
-							First Name
-						</label>
 					</div>
-					<div className=" w-1/5 ml-2 flex flex-col items-center">
+					<div className=" w-2/5 ml-2 flex flex-col items-center">
 						<input
 							type="text"
 							name="lastName"
 							id="lastName"
-							className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300  px-3 py-1"
+							placeholder="Enter last name "
+							className="mt-1 block w-full p-1 rounded-md shadow-sm outline outline-1"
 							value={formData.lastName}
 							onChange={handleChange}
 							required
 						/>
-						<label htmlFor="lastName" className="block  text-gray-700">
-							Last Name
-						</label>
 					</div>
 				</div>
 
-				<div className="mt-10 w-1/2 flex flex-row ">
-					<label
-						htmlFor="dob"
-						className="block font-semi-bold text-xl text-gray-700"
-					>
+				<div className="mt-10  flex  ">
+					<label htmlFor="dob" className="block  font-medium	 mb-2 ">
 						Date of Birth
 					</label>
-					<div className="grid grid-cols-3 gap-4 ml-4">
+					<div className="grid grid-cols-3 gap-2 ml-4">
 						<div>
 							<label htmlFor="dob-day" className="sr-only">
 								Day
@@ -122,7 +112,7 @@ function EnrolmentForm() {
 							<select
 								id="dob-day"
 								name="day"
-								className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+								className="mt-1 block w-full pl-3 pr-10 py-2 text-base  focus:outline-none sm:text-sm rounded-md"
 								value={formData.dob.day}
 								onChange={handleDateChange}
 								required
@@ -142,7 +132,7 @@ function EnrolmentForm() {
 							<select
 								id="dob-month"
 								name="month"
-								className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+								className="mt-1 block  pl-3 pr-10 py-2 text-base  focus:outline-none  sm:text-sm rounded-md "
 								value={formData.dob.month}
 								onChange={handleDateChange}
 								required
@@ -162,7 +152,7 @@ function EnrolmentForm() {
 							<select
 								id="dob-year"
 								name="year"
-								className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
+								className="mt-1 block w-full pl-3 pr-10 py-2 text-base  focus:outline-none sm:text-sm rounded-md"
 								value={formData.dob.year}
 								onChange={handleDateChange}
 								required
@@ -179,16 +169,13 @@ function EnrolmentForm() {
 				</div>
 
 				<div className="mt-10  flex flex-row items-center	">
-					<label
-						htmlFor="gender"
-						className="block font-semi-bold text-xl text-gray-700"
-					>
+					<label htmlFor="gender" className="block  font-medium	 mb-2 ">
 						Gender
 					</label>
 					<select
 						id="gender"
 						name="gender"
-						className="mt-1 block ml-4 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md w-1/4"
+						className="mt-1 block ml-4  w-full p-2 rounded-md shadow-sm outline outline-1"
 						value={formData.gender}
 						onChange={handleChange}
 						required
@@ -203,17 +190,14 @@ function EnrolmentForm() {
 				</div>
 
 				<div className="mt-10 flex flex-row items-center">
-					<label
-						htmlFor="contactNumber"
-						className="block font-semi-bold text-xl text-gray-700"
-					>
+					<label htmlFor="contactNumber" className="block  font-medium	 mb-2">
 						Contact Number
 					</label>
 					<input
 						type="tel"
 						name="contactNumber"
 						id="contactNumber"
-						className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block  border-gray-300  shadow-sm sm:text-sm w-1/4 py-1 px-2 mx-4"
+						className="mt-1  block w-full p-2 rounded-md shadow-sm outline outline-1"
 						placeholder="Enter contact number"
 						value={formData.contactNumber}
 						onChange={handleChange}
@@ -221,18 +205,15 @@ function EnrolmentForm() {
 					/>
 				</div>
 
-				<div className="mt-10 flex flex-row items-center ml-4">
-					<label
-						htmlFor="email"
-						className="block font-semi-bold text-xl text-gray-700"
-					>
+				<div className="mt-10 flex flex-row items-center ">
+					<label htmlFor="email" className="block  font-medium	 mb-2">
 						Email Address
 					</label>
 					<input
 						type="email"
 						name="email"
 						id="email"
-						className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block  border-gray-300  shadow-sm sm:text-sm w-1/3 py-1 px-2"
+						className="mt-1 block w-full p-2 rounded-md shadow-sm outline outline-1"
 						placeholder="Enter email address"
 						value={formData.email}
 						onChange={handleChange}
@@ -241,17 +222,14 @@ function EnrolmentForm() {
 				</div>
 
 				<div className="mt-10 flex flex-row items-center">
-					<label
-						htmlFor="address"
-						className="block font-semi-bold text-xl text-gray-700"
-					>
+					<label htmlFor="address" className="block  font-medium	 mb-2">
 						Address
 					</label>
 					<input
 						id="address"
 						name="address"
 						rows="3"
-						className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block  border-gray-300  shadow-sm sm:text-sm w-1/3 ml-4 px-3 py-1"
+						className="mt-1 block w-full p-2 rounded-md shadow-sm outline outline-1 ml-4"
 						placeholder="Enter address"
 						value={formData.address}
 						onChange={handleChange}
@@ -260,16 +238,13 @@ function EnrolmentForm() {
 				</div>
 
 				<div className="mt-10 flex flex-row items-center">
-					<label
-						htmlFor="maritalStatus"
-						className="block font-semi-bold text-xl text-gray-700"
-					>
+					<label htmlFor="maritalStatus" className="block  font-medium mb-2">
 						Marital Status
 					</label>
 					<select
 						id="maritalStatus"
 						name="maritalStatus"
-						className="mt-1 block ml-4 pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm w-1/5"
+						className="mt-1 block ml-4 pl-3  py-2 text-base  sm:text-sm   w-full p-2 rounded-md shadow-sm outline outline-1"
 						value={formData.maritalStatus}
 						onChange={handleChange}
 						required
@@ -282,10 +257,10 @@ function EnrolmentForm() {
 						))}
 					</select>
 				</div>
-				<div className="my-10">
+				<div className="my-10 content-center flex justify-center">
 					<button
 						type="submit"
-						className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-1/6"
+						className="bg-green-700  text-white font-medium px-4 py-2 rounded-md shadow-sm w-4/5"
 					>
 						Submit
 					</button>

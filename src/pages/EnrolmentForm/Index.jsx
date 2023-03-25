@@ -1,13 +1,17 @@
 import React from "react";
+import EmergencyContactForm from "./EmergencyContactForm";
 import EnrolmentForm from "./EnrollmentPage";
 
 import PageHeader from "./PageHeader";
 
 function EnrollmentPage() {
 	return (
-		<div className="mx-20">
+		<div className="ml-10 mr-9">
 			<PageHeader />
-			<EnrolmentForm />
+			<div className="flex lg:flex-row sm:flex-col  justify-around ">
+				<EnrolmentForm />
+				<EmergencyContactForm />
+			</div>
 		</div>
 	);
 }
