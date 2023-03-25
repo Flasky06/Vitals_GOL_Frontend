@@ -1,6 +1,17 @@
 import React, { useState } from "react";
+import useForm from "../../hooks/useForm";
 
 const HospitalLoginForm = () => {
+	const { values, handleChange, resetForm } = useForm({
+		username: "",
+		password: "",
+	});
+
+	function handleSubmit(event) {
+		event.preventDefault();
+		console.log(values);
+		resetForm();
+	}
 	const [showPassword, setShowPassword] = useState(false);
 
 	const handleShowPassword = () => {
@@ -13,13 +24,16 @@ const HospitalLoginForm = () => {
 				<h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
 					Login
 				</h2>
-				<form>
+				<form onSubmit={handleSubmit}>
 					<div className="mb-4">
 						<input
 							className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
 							id="username"
 							type="text"
 							placeholder="Username"
+							name="username"
+							value={values.name}
+							onChange={handleChange}
 						/>
 					</div>
 					<div className="mb-6">
@@ -29,6 +43,9 @@ const HospitalLoginForm = () => {
 								id="password"
 								type={showPassword ? "text" : "password"}
 								placeholder="Password"
+								name="password"
+								value={values.name}
+								onChange={handleChange}
 							/>
 							<span
 								className="absolute right-0 top-0 mt-3 mr-3 text-gray-500 cursor-pointer"
@@ -41,7 +58,7 @@ const HospitalLoginForm = () => {
 					<div className="flex items-center justify-between">
 						<button
 							className="bg-green-700  text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline  w-full"
-							type="button"
+							type="submit"
 						>
 							Sign In
 						</button>
