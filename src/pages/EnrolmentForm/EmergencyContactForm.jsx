@@ -78,11 +78,11 @@ function EmergencyContactForm() {
 						required
 					/>
 				</div>
-				{/* <div className=" flex justify-center my-8">
+				<div className=" flex justify-center my-8">
 					<button className="bg-green-700  text-white font-medium px-4 py-2 rounded-md shadow-sm md:w-4/5 lg:w-full">
 						Submit
 					</button>
-				</div> */}
+				</div>
 			</form>
 		</div>
 	);
