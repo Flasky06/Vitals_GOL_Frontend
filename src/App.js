@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // Import pages
-import EnrollmentPage from "./pages/EnrolmentForm/Index";
+
 import HospitalLoginPage from "./pages/HospitalLogin/Index";
+import EnrollmentPage from "./pages/PatientEnrolmentForm/Index";
 import PatientLoginForm from "./pages/PatientLogin/login/PatientLoginForm";
 
 function App() {
