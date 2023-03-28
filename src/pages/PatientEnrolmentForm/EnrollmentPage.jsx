@@ -1,5 +1,4 @@
 import { useState } from "react";
-import useForm from "../../hooks/useForm";
 
 const genderOptions = [
 	{ label: "Male", value: "male" },
@@ -11,24 +10,7 @@ const maritalStatusOptions = [
 	{ label: "Married", value: "married" },
 ];
 
-const days = Array.from({ length: 31 }, (_, i) => i + 1);
-const months = [
-	{ label: "January", value: "01" },
-	{ label: "February", value: "02" },
-	{ label: "March", value: "03" },
-	{ label: "April", value: "04" },
-	{ label: "May", value: "05" },
-	{ label: "June", value: "06" },
-	{ label: "July", value: "07" },
-	{ label: "August", value: "08" },
-	{ label: "September", value: "09" },
-	{ label: "October", value: "10" },
-	{ label: "November", value: "11" },
-	{ label: "December", value: "12" },
-];
-const years = Array.from({ length: 100 }, (_, i) => 2023 - i);
-
-function EnrolmentForm({ handleChange, handleDateChange, values }) {
+function EnrolmentForm({ handleChange, values }) {
 	return (
 		<div className="mt-4 shadow-lg px-5 py-3">
 			<div className="flex flex-row  items-center	">
@@ -60,75 +42,19 @@ function EnrolmentForm({ handleChange, handleDateChange, values }) {
 					/>
 				</div>
 			</div>
-
-			<div className="mt-10  flex  ">
-				<label htmlFor="dob" className="block  font-medium	 mb-2 ">
-					Date of Birth
+			<div className="mt-10  flex flex-row items-center">
+				<label className="block  font-medium	 mb-2 " htmlFor="date-input">
+					Date of Birth:
 				</label>
-				<div className="grid grid-cols-3 gap-2 ml-4">
-					<div>
-						<label htmlFor="dob-day" className="sr-only">
-							Day
-						</label>
-						<select
-							id="dob-day"
-							name="day"
-							className="mt-1 block  w-full pl-3 pr-10 py-2 text-base  focus:outline-none sm:text-sm rounded-md"
-							value={values.dob.day}
-							onChange={handleDateChange}
-							required
-						>
-							<option value="">Day</option>
-							{days.map((day) => (
-								<option key={day} value={day} className="">
-									{day}
-								</option>
-							))}
-						</select>
-					</div>
-					<div>
-						<label htmlFor="dob-month" className="sr-only">
-							Month
-						</label>
-						<select
-							id="dob-month"
-							name="month"
-							className="mt-1 block  pl-3 pr-10 py-2 text-base  focus:outline-none  sm:text-sm rounded-md "
-							value={values.dob.month}
-							onChange={handleDateChange}
-							required
-						>
-							<option value="">Month</option>
-							{months.map((month) => (
-								<option key={month.value} value={month.value}>
-									{month.label}
-								</option>
-							))}
-						</select>
-					</div>
-					<div>
-						<label htmlFor="dob-year" className="sr-only">
-							Year
-						</label>
-						<select
-							id="dob-year"
-							name="year"
-							className="mt-1 block w-full pl-3 pr-10 py-2 text-base  focus:outline-none sm:text-sm rounded-md"
-							value={values.dob.year}
-							onChange={handleDateChange}
-							required
-						>
-							<option value="">Year</option>
-							{years.map((year) => (
-								<option key={year} value={year}>
-									{year}
-								</option>
-							))}
-						</select>
-					</div>
-				</div>
+				<input
+					className=" mt-1 block ml-4  lg:w-full p-2 rounded-md shadow-sm outline outline-1"
+					type="date"
+					name="dob"
+					value={values.dob}
+					onChange={handleChange}
+				/>
 			</div>
-
+			{/*  */}
 			<div className="mt-10  flex flex-row items-center	">
 				<label htmlFor="gender" className="block  font-medium	 mb-2 ">
 					Gender

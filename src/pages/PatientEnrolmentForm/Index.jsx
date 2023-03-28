@@ -6,7 +6,7 @@ import EnrolmentForm from "./EnrollmentPage";
 import PageHeader from "./PageHeader";
 
 function EnrollmentPage() {
-	const { values, handleChange, handleDateChange, resetForm } = useForm({
+	const { values, handleChange, resetForm } = useForm({
 		firstName: "",
 		lastName: "",
 		gender: "",
@@ -14,11 +14,7 @@ function EnrollmentPage() {
 		email: "",
 		address: "",
 		maritalStatus: "",
-		dob: {
-			day: "",
-			month: "",
-			year: "",
-		},
+		dob: "",
 		EmergencyContactsFirstName: "",
 		EmergencyContactsLastName: "",
 		relationship: "",
@@ -39,7 +35,6 @@ function EnrollmentPage() {
 						values={values}
 						handleSubmit={handleSubmit}
 						handleChange={handleChange}
-						handleDateChange={handleDateChange}
 					/>
 					<EmergencyContactForm
 						values={values}

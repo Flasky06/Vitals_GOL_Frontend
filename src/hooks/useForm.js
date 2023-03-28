@@ -7,22 +7,12 @@ function useForm(initialValues) {
 		const { name, value } = event.target;
 		setValues({ ...values, [name]: value });
 	}
-	const handleDateChange = (event) => {
-		const { name, value } = event.target;
-		setValues((prevFormData) => ({
-			...prevFormData,
-			dob: {
-				...prevFormData.dob,
-				[name]: value,
-			},
-		}));
-	};
 
 	function resetForm() {
 		setValues(initialValues);
 	}
 
-	return { values, handleChange, handleDateChange, resetForm };
+	return { values, handleChange, resetForm };
 }
 
 export default useForm;
