@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const genderOptions = [
 	{ label: "Male", value: "male" },
 	{ label: "Female", value: "female" },
