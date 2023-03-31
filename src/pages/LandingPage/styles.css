@@ -1,0 +1,114 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+/* utilities and global */
+
+/* this is just me getting fancy with the logo, it will be replaced with a real logo once we have one */
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.logo span{
+    background-color: var(--color-primary);
+    padding: .5rem;
+    color: var(--color-white);
+    border-radius: 100px;
+}
+
+.u-text-pri-col{
+    color: var(--color-primary)!important;
+}
+/* end of utilities and global */
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    z-index: 100000;
+}
+
+.header__link {
+  transition: all 0.5s ease;
+}
+
+.header__link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.header__link__cta-1{
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid currentColor;
+}
+/* end of header */
+
+/* start of the home section */
+.home{
+    position: relative;
+}
+
+.home-section{
+    min-height: 85vh;
+}
+
+.home-textbox h2, p{
+    color: var(--color-white);
+}
+
+.home-textbox a{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.home-textbox__paragraph-lined{
+    margin-left: 3rem;
+    position: relative;
+    color: var(--color-white);
+}
+
+.home-textbox__paragraph-lined::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 101%;
+    background-color: var(--color-white);
+    width: 2.7rem;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.contactd-cards__container{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.home-contact-card{
+    box-shadow: 0 0 5px #777;
+    width: max-content;
+    padding: 1rem;
+    background-color: var(--color-white);
+}
+
+.home-contact__icon-box{
+    --size: 3.5rem;
+    width: var(--size);
+    height: var(--size);
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.home-contact__icon-box svg{
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+    fill: var(--color-primary);
+}
+
+.home-contact-card p{
+    color: var(--color-black);
+}
+/* end of the home section */
+
