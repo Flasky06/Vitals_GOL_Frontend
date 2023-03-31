@@ -18,6 +18,26 @@
 .u-text-pri-col{
     color: var(--color-primary)!important;
 }
+
+.subtitle{
+    color: var(--color-grey-04);
+    font-size: 1.5rem;
+}
+
+.maintitle{
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.link-transparent{
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.link-filled{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
 /* end of utilities and global */
 .header{
     top: 0;
@@ -52,7 +72,7 @@
     min-height: 85vh;
 }
 
-.home-textbox h2, p{
+.home-textbox > h2, .home-textbox > p{
     color: var(--color-white);
 }
 
@@ -112,3 +132,18 @@
 }
 /* end of the home section */
 
+
+/* about section */
+.about__images, .about__text{
+    width: 50%;
+    padding: 1rem;
+}
+
+.about__text > p{
+    line-height: 1.8;
+}
+
+.about__ctas>:first-child{
+    margin-right: 1rem;
+}
+/* end of the about section */

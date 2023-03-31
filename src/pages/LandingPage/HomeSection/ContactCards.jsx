@@ -12,13 +12,13 @@ const ContactCards = () => {
       />
       <ContactCard
         icon={<Mail />}
-        title="give us a call"
-        subtitle="0718762354"
+        title="send us an email"
+        subtitle="vitals@gmail.com"
       />
       <ContactCard
         icon={<LocationPin />}
-        title="give us a call"
-        subtitle="0718762354"
+        title="visit us in our offices"
+        subtitle="(coming soon)"
       />
     </div>
   );
