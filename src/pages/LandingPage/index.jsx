@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header/Header";
 import HomeSection from "./HomeSection/HomeSection";
 import About from "./About/About";
+import Features from "./Features/Features";
 import "./styles.css";
 
 const LandingPage = () => {
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Header />
       <HomeSection />
       <About />
+      <Features />
     </>
   );
 };

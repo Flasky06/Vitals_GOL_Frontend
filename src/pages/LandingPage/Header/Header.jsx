@@ -12,8 +12,8 @@ const Header = () => {
           <HeaderLinkElement label="Home" />
           <HeaderLinkElement label="About" />
           <HeaderLinkElement label="Pages" />
-          <HeaderLinkElement label="Doctors" />
-          <HeaderLinkElement label="Contact" />
+          <HeaderLinkElement label="Features" />
+          <HeaderLinkElement label="subscribe" />
           <HeaderLinkElement label="Team" />
         </ol>
       </nav>

@@ -1,3 +1,9 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --color-primary: #ff5062;
     --color-primary-darker: crimson;
