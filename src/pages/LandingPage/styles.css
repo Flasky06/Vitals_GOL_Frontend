@@ -215,3 +215,38 @@
     transform: translateY(3px);
 }
 /* end of features section */
+
+/* subscribe section */
+.subscribe_container > *{
+    width: 45%;
+}
+
+.subscribe__campaign{
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.subscribe__form{
+    box-shadow: 0 0 5px #777;
+}
+
+.subscribe_form_input{
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.subscribe_form_input::placeholder{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.subscribe__submit{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+/* end of the subscribe section */
