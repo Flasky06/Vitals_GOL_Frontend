@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { OpenLink } from "../../../Icons/Icons";
 
 const Feature = ({ image, title, description, link }) => {
@@ -15,13 +16,13 @@ const Feature = ({ image, title, description, link }) => {
           {description}
         </p>
         <div className="flex justify-center">
-          <a
-            href={link}
+          <Link
+            to={link}
             className="feature__link mt-3 inline-flex cursor-pointer p-3 capitalize font-bold"
           >
             <span className="inline-block mr-2">Get started</span>
             <OpenLink />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
