@@ -5,7 +5,7 @@ import "./App.css";
 
 import HospitalLoginPage from "./pages/HospitalLogin/Index";
 import EnrollmentPage from "./pages/PatientEnrolmentForm/Index";
-import PatientLoginForm from "./pages/PatientLogin/login/PatientLoginForm";
+import Login from "./pages/Login/login/Login";
 import LandingPage from "./pages/LandingPage";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
 		<>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/login" exact element={<PatientLoginForm />} />
+					<Route path="/login" exact element={<Login />} />
 					<Route path="/hospital/login" exact element={<HospitalLoginPage />} />
 					<Route
 						path="/hospital/patient-enrolment"
