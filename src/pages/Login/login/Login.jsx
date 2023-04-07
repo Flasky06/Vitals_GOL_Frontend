@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.css";
 import Header from "../../LandingPage/Header/Header";
 import useForm from "../../../hooks/useForm";
+import { Link } from "react-router-dom";
 
 function Login() {
   const { values, handleChange, resetForm } = useForm({
@@ -51,12 +52,13 @@ function Login() {
               placeholder="Enter your password"
             />
           </div>
-          <button
+          {/* <button
             type="submit"
             className="login-submit-btn block p-3 font-bold capitalize"
           >
             Log in
-          </button>
+          </button> */}
+          <Link className="login-submit-btn block p-3 font-bold capitalize" to="/admin-landing">Log in</Link>
         </form>
       </div>
     </>

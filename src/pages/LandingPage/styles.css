@@ -52,6 +52,7 @@
     width: 100%;
     background-color: var(--color-white);
     z-index: 100000;
+    height: 10vh;
 }
 
 .header__link {

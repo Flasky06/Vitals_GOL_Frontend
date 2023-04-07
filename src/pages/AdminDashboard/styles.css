@@ -1,0 +1,17 @@
+.admin-dashboard-header {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+}
+
+.admin-dashboard-header > h2{
+    color: #333;
+}
+
+.admin-header-link{
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 100px;
+}

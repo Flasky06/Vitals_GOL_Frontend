@@ -2,6 +2,8 @@ import React from "react";
 import useForm from "../../hooks/useForm";
 import EmergencyContactForm from "./EmergencyContactForm";
 import EnrolmentForm from "./EnrollmentPage";
+import Header from "../LandingPage/Header/Header";
+import AdminHeaderDashboard from "../AdminDashboard/AdminDashboardHeader/AdminDashboardHeader";
 
 import PageHeader from "./PageHeader";
 
@@ -27,8 +29,10 @@ function EnrollmentPage() {
 		resetForm();
 	}
 	return (
-		<div className="ml-10 mr-9 ">
-			<PageHeader />
+		<div>
+			<Header />
+			<AdminHeaderDashboard />
+			{/* <PageHeader /> */}
 			<form onSubmit={handleSubmit}>
 				<div className="flex lg:flex-row sm:flex-col  justify-around  mt-1">
 					<EnrolmentForm
