@@ -141,7 +141,7 @@ function EnrolmentForm({ handleChange, values }) {
 
       {/* marital status input */}
       <div className="patient-enrollment-form-group flex items-center mb-12">
-        <CustomLabel htmlFor="maritalStatuts" text="marital status" />
+        <CustomLabel htmlFor="maritalStatus" text="marital status" />
         <div className="relative">
           <select
             id="maritalStatus"
@@ -161,6 +161,44 @@ function EnrolmentForm({ handleChange, values }) {
         </div>
       </div>
       {/* end of marital status input */}
+
+	  {/* weight input field */}
+	  <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="weight" text="weight(Kgs)" />
+        <div className="relative">
+          <input
+            id="weight"
+            name="weight"
+            className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+            placeholder="weight"
+            value={values.weight}
+            onChange={handleChange}
+            required
+			type="number"
+          />
+          <InputGuide message="enter patient weight" />
+        </div>
+      </div>
+	  {/* end of weight input field */}
+
+	  {/* height input field */}
+	  <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="height" text="height" />
+        <div className="relative">
+          <input
+            id="height"
+            name="height"
+            className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+            placeholder="height"
+            value={values.height}
+            onChange={handleChange}
+            required
+			type="number"
+          />
+          <InputGuide message="enter patient height" />
+        </div>
+      </div>
+	  {/* end of height input field */}
     </div>
   );
 }

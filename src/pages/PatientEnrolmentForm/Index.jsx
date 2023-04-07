@@ -22,6 +22,8 @@ function EnrollmentPage() {
     EmergencyContactsLastName: "",
     relationship: "",
     phoneNumber: "",
+	weight: 0,
+	height: 0,
   });
 
   function handleSubmit(event) {
