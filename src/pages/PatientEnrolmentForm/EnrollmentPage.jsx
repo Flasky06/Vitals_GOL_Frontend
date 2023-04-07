@@ -1,149 +1,168 @@
+import InputGuide from "./InputGuide";
+import CustomLabel from "./CustomLabel";
+
 const genderOptions = [
-	{ label: "Male", value: "male" },
-	{ label: "Female", value: "female" },
+  { label: "Male", value: "male" },
+  { label: "Female", value: "female" },
 ];
 
 const maritalStatusOptions = [
-	{ label: "Single", value: "single" },
-	{ label: "Married", value: "married" },
+  { label: "Single", value: "single" },
+  { label: "Married", value: "married" },
 ];
 
 function EnrolmentForm({ handleChange, values }) {
-	return (
-		<div className="mt-4 shadow-lg px-5 py-3">
-			<div className="flex flex-row  items-center	">
-				<label htmlFor="name" className="block font-medium	 mb-2">
-					Name
-				</label>
-				<div className="w-2/5 mx-6 flex flex-col items-center">
-					<input
-						type="text"
-						name="firstName"
-						id="firstName"
-						placeholder="Enter first name"
-						className="mt-1 block w-full p-1 rounded-md shadow-sm outline outline-1  "
-						value={values.firstName}
-						onChange={handleChange}
-						required
-					/>
-				</div>
-				<div className=" w-2/5 ml-2 flex flex-col items-center">
-					<input
-						type="text"
-						name="lastName"
-						id="lastName"
-						placeholder="Enter last name "
-						className="mt-1 block w-full p-1 rounded-md shadow-sm outline outline-1"
-						value={values.lastName}
-						onChange={handleChange}
-						required
-					/>
-				</div>
-			</div>
-			<div className="mt-10  flex flex-row items-center">
-				<label className="block  font-medium	 mb-2 " htmlFor="date-input">
-					Date of Birth:
-				</label>
-				<input
-					className=" mt-1 block ml-4  lg:w-full p-2 rounded-md shadow-sm outline outline-1"
-					type="date"
-					name="dob"
-					value={values.dob}
-					onChange={handleChange}
-				/>
-			</div>
-			{/*  */}
-			<div className="mt-10  flex flex-row items-center	">
-				<label htmlFor="gender" className="block  font-medium	 mb-2 ">
-					Gender
-				</label>
-				<select
-					id="gender"
-					name="gender"
-					className="mt-1 block ml-4  lg:w-full p-2 rounded-md shadow-sm outline outline-1"
-					value={values.gender}
-					onChange={handleChange}
-					required
-				>
-					<option value="">Select gender</option>
-					{genderOptions.map((option) => (
-						<option key={option.value} value={option.value}>
-							{option.label}
-						</option>
-					))}
-				</select>
-			</div>
+  return (
+    <div>
+      {/* full name input */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="name" text="Name" />
+        <div className="flex justify-between">
+          <div className="relative u-fix-width-PEF">
+            <input
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="Enter first name"
+              className="patient-enrollment-input font-bold block mr-2 w-full p-3 outline outline-2"
+              value={values.firstName}
+              onChange={handleChange}
+              required
+            />
+            <InputGuide message="first name" />
+          </div>
+          <div className="relative u-fix-width-PEF">
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Enter last name "
+              className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+              value={values.lastName}
+              onChange={handleChange}
+              required
+            />
+            <InputGuide message="last name" />
+          </div>
+        </div>
+      </div>
+      {/* end of full name input */}
 
-			<div className="mt-10 flex flex-row items-center">
-				<label htmlFor="contactNumber" className="block  font-medium	 mb-2">
-					Contact Number
-				</label>
-				<input
-					type="number"
-					name="contactNumber"
-					id="contactNumber"
-					className="mt-1  block w-full p-2 rounded-md shadow-sm outline outline-1"
-					placeholder="Enter contact number"
-					value={values.contactNumber}
-					onChange={handleChange}
-					required
-				/>
-			</div>
+      {/* date of birth input */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="dob" text="date of birth" />
+        <input
+          id="dob"
+          className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+          type="date"
+          name="dob"
+          value={values.dob}
+          onChange={handleChange}
+        />
+      </div>
+      {/*  end of date of birth input */}
 
-			<div className="mt-10 flex flex-row items-center ">
-				<label htmlFor="email" className="block  font-medium	 mb-2">
-					Email Address
-				</label>
-				<input
-					type="email"
-					name="email"
-					id="email"
-					className="mt-1 block w-full p-2 rounded-md shadow-sm outline outline-1"
-					placeholder="Enter email address"
-					value={values.email}
-					onChange={handleChange}
-					required
-				/>
-			</div>
+      {/* gender input */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="gender" text="gender" />
+        <select
+          id="gender"
+          name="gender"
+          className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+          value={values.gender}
+          onChange={handleChange}
+          required
+        >
+          <option value="">Select gender</option>
+          {genderOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </div>
+      {/* end of gender input */}
 
-			<div className="mt-10 flex flex-row items-center">
-				<label htmlFor="address" className="block  font-medium	 mb-2">
-					Address
-				</label>
-				<input
-					id="address"
-					name="address"
-					rows="3"
-					className="mt-1 block w-full p-2 rounded-md shadow-sm outline outline-1 ml-4"
-					placeholder="Enter address"
-					value={values.address}
-					onChange={handleChange}
-					required
-				></input>
-			</div>
+      {/* contact number input  */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="contactNumber" text="contact number" />
+        <div className="relative">
+          <input
+            type="number"
+            name="contactNumber"
+            id="contactNumber"
+            className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+            placeholder="Enter contact number"
+            value={values.contactNumber}
+            onChange={handleChange}
+            required
+          />
+        </div>
+      </div>
+      {/* end of contact number input  */}
 
-			<div className="mt-10 flex flex-row items-center">
-				<label htmlFor="maritalStatus" className="block  font-medium mb-2">
-					Marital Status
-				</label>
-				<select
-					id="maritalStatus"
-					name="maritalStatus"
-					className="mt-1 block ml-4 pl-3  py-2 text-base  sm:text-sm w-full p-2 rounded-md shadow-sm outline outline-1"
-					value={values.maritalStatus}
-					onChange={handleChange}
-					required
-				>
-					<option value="">Select marital status</option>
-					{maritalStatusOptions.map((option) => (
-						<option key={option.value} value={option.value}>
-							{option.label}
-						</option>
-					))}
-				</select>
-			</div>
-		</div>
-	);
+      {/* email address input */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="email" text="email address" />
+        <div className="relative">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+            placeholder="Enter email address"
+            value={values.email}
+            onChange={handleChange}
+            required
+          />
+          <InputGuide message="example@gmail.com" />
+        </div>
+      </div>
+      {/* end of email address input */}
+
+      {/* address input */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="address" text="address" />
+        <div className="relative">
+          <input
+            id="address"
+            name="address"
+            rows="3"
+            className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+            placeholder="Enter address"
+            value={values.address}
+            onChange={handleChange}
+            required
+          />
+          <InputGuide message="street address" />
+        </div>
+      </div>
+      {/* end of address input */}
+
+      {/* marital status input */}
+      <div className="patient-enrollment-form-group flex items-center mb-12">
+        <CustomLabel htmlFor="maritalStatuts" text="marital status" />
+        <div className="relative">
+          <select
+            id="maritalStatus"
+            name="maritalStatus"
+            className="patient-enrollment-input font-bold block w-full p-3 outline outline-2"
+            value={values.maritalStatus}
+            onChange={handleChange}
+            required
+          >
+            <option value="">Select marital status</option>
+            {maritalStatusOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      {/* end of marital status input */}
+    </div>
+  );
 }
 
 export default EnrolmentForm;

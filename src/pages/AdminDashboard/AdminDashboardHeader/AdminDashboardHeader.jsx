@@ -9,7 +9,7 @@ const AdminHeaderDashboard = () => {
                 <nav>
                     <ol className="flex">
                         <li><Link to="/hospital/patient-enrolment" className="admin-header-link mr-2 font-bold block p-3 capitalize">add new patient</Link></li>
-                        <li><a href="" className="admin-header-link font-bold block p-3 capitalize">all patient files</a></li>
+                        <li><Link to="/hospital/patient-files/all" className="admin-header-link font-bold block p-3 capitalize">all patient files</Link></li>
                     </ol>
                 </nav>
             </div>
