@@ -16,3 +16,64 @@
     color: #fff;
     border-radius: 100px;
 }
+
+/* patient file stylings */
+.patient-file{
+    width: 85vw;
+    margin: 4rem auto;
+    box-shadow: 0 0 3px #777;
+    border-radius: 8px;
+}
+
+.patient-file__container{
+    display: grid;
+    grid-template-columns: .2fr .8fr;
+}
+
+.patient-file__avartar{
+    --size: 10rem;
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    color: #fff;
+    margin: 1rem auto;
+}
+
+
+.patient-file__right >*{
+    width: 33%;
+}
+
+.patient-file__info-box{
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    margin: 1rem 0;
+}
+
+.patient-file__info-box >p:first-child{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.patient-file__info-box >p:last-child{
+    font-weight: bold;
+    text-align: justify;
+}
+
+.patient-file__controls-link-filled{
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: #fff;
+}
+
+.patient-file__controls-link-outline{
+    border: 2px solid var(--color-primary);
+    margin-right: 1rem;
+}
+/* end of patient file stylings */
