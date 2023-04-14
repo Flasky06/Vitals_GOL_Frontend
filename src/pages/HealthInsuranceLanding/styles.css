@@ -1,0 +1,66 @@
+.ins-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url(../../assets/images/ins.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 85vh;
+  color: #fff !important;
+}
+
+.insurance-hero__text {
+  /* width: 60%; */
+  margin-right: auto;
+}
+
+.insurance-hero__desc {
+  line-height: 2;
+}
+
+.insurance-link-main {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 100px;
+  border: 3px solid transparent;
+}
+
+.insurance-link-sub {
+  border: 3px solid var(--color-primary);
+  border-radius: 100px;
+}
+
+.health-insurance-benefits__section {
+  padding: 2rem 0;
+}
+
+.health-insurance-benefits__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .health-insurance-benefits__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.health_insurance_benefit {
+  /* width: 60vw; */
+  /* margin: 2rem auto; */
+  box-shadow: 1px 1px 5px #777;
+}
+
+.health_insurance-benefit-count {
+  color: var(--color-primary);
+}
+
+.health-benefit__description {
+  line-height: 2;
+}
+
+.health-benefit__description span {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 1px;
+}

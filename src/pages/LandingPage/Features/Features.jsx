@@ -41,7 +41,7 @@ const Features = () => {
           image={insurance}
           title="insurance info system"
           description="This system educates users about various medical insurance schemes, offering comprehensive information about coverage options, premium rates, and claims management. Users can make informed decisions when selecting an insurance plan that suits their needs and stay up-to-date with changes in policies. With this system, users can access important information about medical insurance and ensure appropriate coverage for their healthcare needs."
-          link="/login"
+          link="/health-insurance-landing"
         />
       </div>
     </section>
