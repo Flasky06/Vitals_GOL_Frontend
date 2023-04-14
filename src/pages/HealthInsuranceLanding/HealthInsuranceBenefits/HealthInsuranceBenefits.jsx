@@ -67,6 +67,7 @@ const HealthInsuranceBenefits = () => {
         {healthInsuranceBenefits.map((currentBenefit, index) => (
           <HealthInsuranceBenefit
             key={index}
+            // eslint-disable-next-line
             count={index < 9 ? "0" + `${index + 1}` : index + 1}
             benefit={currentBenefit.benefit}
             benefitDescription={currentBenefit.description}

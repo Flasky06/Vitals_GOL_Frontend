@@ -64,3 +64,39 @@
   color: #fff;
   border-radius: 1px;
 }
+
+.insurance-comapnies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.insurance-company-card {
+  --size: 40rem;
+  width: var(--size);
+  box-shadow: 3px 3px 3px #999;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.insurance-company-card--image-container {
+  height: 15rem;
+}
+
+.insurance-company-card--image-container > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.insurance-company-card__description {
+  line-height: 1.8;
+}
+
+.insurance-company-card--link {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 10px;
+}
