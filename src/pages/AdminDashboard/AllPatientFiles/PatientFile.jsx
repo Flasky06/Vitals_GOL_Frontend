@@ -97,6 +97,9 @@ const PatientFile = ({
         <Link className="patient-file__controls-link-filled p-3 font-bold capitalize">
           Delete patient info
         </Link>
+        <Link to="/dosage-reminder" className="patient-file__controls-link-filled p-3 font-bold capitalize ml-3">
+          add dosage reminder for this patient
+        </Link>
       </div>
     </div>
   );
