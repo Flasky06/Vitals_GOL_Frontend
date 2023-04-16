@@ -11,6 +11,7 @@ import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import AllPatientFiles from "./pages/AdminDashboard/AllPatientFiles/AllPatientFiles";
 import HealthInsuranceLanding from "./pages/HealthInsuranceLanding";
 import DosageReminder from "./pages/DosageReminder/DosageReminder";
+import NewPractitioner from './pages/NewPractitionerForm/Index'
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/hospital/patient-files/all" exact element={<AllPatientFiles />} />
 					<Route path="/health-insurance-landing" exact element={<HealthInsuranceLanding />} />
 					<Route path="/dosage-reminder" exact element={<DosageReminder />} />
+					<Route path="/new-practitioner" exact element={<NewPractitioner />} />
 				</Routes>
 			</BrowserRouter>
 		</>
