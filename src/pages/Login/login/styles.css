@@ -1,8 +1,8 @@
 .u-center {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /* 
 form{
@@ -11,21 +11,27 @@ form{
 } */
 
 .login-input {
-  background-color: #e6e6e6;
-  width: 100% !important;
-  color: #111;
-  border-radius: 8px;
+	background-color: #e6e6e6;
+	width: 100% !important;
+	color: #111;
+	border-radius: 8px;
 }
 
 .login-input::placeholder {
-  font-weight: bold;
-  text-transform: capitalize;
-  color: #111;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #111;
 }
 
 .login-submit-btn {
-  background-color: var(--color-primary);
-  color: #fff;
-  border-radius: 100px;
-  text-align: center;
+	background-color: var(--color-primary);
+	color: #fff;
+	border-radius: 100px;
+	text-align: center;
+}
+
+.login-text-btn {
+	color: var(--color-primary);
+	font-weight: bold;
+	text-transform: capitalize;
 }
