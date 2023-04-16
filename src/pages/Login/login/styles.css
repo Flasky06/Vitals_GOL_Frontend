@@ -1,0 +1,31 @@
+.u-center {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+form{
+    border: 3px solid red;
+    min-width: 60%;
+} */
+
+.login-input {
+  background-color: #e6e6e6;
+  width: 100% !important;
+  color: #111;
+  border-radius: 8px;
+}
+
+.login-input::placeholder {
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #111;
+}
+
+.login-submit-btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 100px;
+  text-align: center;
+}
