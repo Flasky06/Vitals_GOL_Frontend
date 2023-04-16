@@ -5,7 +5,7 @@ import img6 from "../../../assets/images/home-image-6.jpg";
 
 const About = () => {
   return (
-    <section className="mt-24 p-8">
+    <section className="mt-24 p-8" id="about">
       <div className="flex items-center w-full">
         <div className="about__images">
           {/* images */}

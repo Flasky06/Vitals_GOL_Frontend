@@ -20,6 +20,14 @@ const AdminHeaderDashboard = () => {
 					<ol className='flex'>
 						<li>
 							<Link
+								to='/new-practitioner'
+								className='admin-header-link font-bold block p-3 mr-2 capitalize'
+							>
+								add new practitioner
+							</Link>
+						</li>
+						<li>
+							<Link
 								to='/hospital/patient-enrolment'
 								className='admin-header-link mr-2 font-bold block p-3 capitalize'
 							>
@@ -29,7 +37,7 @@ const AdminHeaderDashboard = () => {
 						<li>
 							<Link
 								to='/hospital/patient-files/all'
-								className='admin-header-link font-bold block p-3 capitalize'
+								className='admin-header-link font-bold block p-3 capitalize mr-2'
 							>
 								all patient files
 							</Link>
