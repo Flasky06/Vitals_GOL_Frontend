@@ -3,6 +3,7 @@ import Header from "../../LandingPage/Header/Header";
 import AdminHeaderDashboard from "../AdminDashboardHeader/AdminDashboardHeader";
 import PatientFile from "./PatientFile";
 import { GetPatients } from "../../../services/Patients.js";
+import { API_URL } from "../../../environments";
 
 const AllPatientFiles = () => {
 	const [patientFiles, setPatientFiles] = useState([]);
@@ -17,6 +18,8 @@ const AllPatientFiles = () => {
 
 		fetchData();
 	}, []);
+
+	console.log("API Url", API_URL);
 	return (
 		<>
 			<Header />

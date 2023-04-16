@@ -1,7 +1,8 @@
 import axios from "axios";
+import { API_URL } from "../environments";
 
 export const AddPatient = async (data) => {
-	const Base_URL = "http://localhost:3001";
+	const Base_URL = API_URL;
 	const path = "/add-patient";
 	const addPatientUrl = `${Base_URL}${path}`;
 
@@ -31,7 +32,7 @@ export const AddPatient = async (data) => {
 };
 
 export const GetPatients = async () => {
-	const Base_URL = "http://localhost:3001";
+	const Base_URL = API_URL;
 	const path = "/get-patients";
 	const getPatientsUrl = `${Base_URL}${path}`;
 

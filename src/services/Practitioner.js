@@ -1,7 +1,8 @@
 import axios from "axios";
+import { API_URL } from "../environments";
 
 export const AddNewPractitioner = async (data) => {
-	const Base_URL = "http://localhost:3001";
+	const Base_URL = API_URL;
 	const path = "/super-add-user";
 	const superAddUserUrl = `${Base_URL}${path}`;
 

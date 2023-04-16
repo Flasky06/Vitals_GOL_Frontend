@@ -1,7 +1,8 @@
 import axios from "axios";
+import { API_URL } from "../environments";
 
 export const login = async ({ identity, password }) => {
-	const Base_URL = "http://localhost:3001";
+	const Base_URL = API_URL;
 	const path = "/login";
 	const loginUrl = `${Base_URL}${path}`;
 
