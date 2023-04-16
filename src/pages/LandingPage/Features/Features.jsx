@@ -9,7 +9,7 @@ import insurance from "../../../assets/images/insurance1.jpg";
 
 const Features = () => {
   return (
-    <section className="features mt-24">
+    <section className="features mt-24" id="features">
       <TitleElement
         shouldCenter={true}
         mainTitle="what vitals brings to the table"

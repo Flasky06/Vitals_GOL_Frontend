@@ -38,7 +38,7 @@ const sectionsData = [
 
 const HomeSection = () => {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <AliceCarousel
         disableDotsControls
         disableButtonsControls

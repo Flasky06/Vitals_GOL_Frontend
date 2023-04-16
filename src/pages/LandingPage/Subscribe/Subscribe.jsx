@@ -5,7 +5,7 @@ import video from "../../../assets/videos/animation.mp4";
 
 const Subscribe = () => {
   return (
-    <section className="mt-20 p-4">
+    <section className="mt-20 p-4" id="subscribe">
       <TitleElement
         shouldCenter={true}
         mainTitle="never miss a tip"

@@ -16,23 +16,25 @@ import NewPractitioner from './pages/NewPractitionerForm/Index'
 function App() {
 	return (
 		<>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/login" exact element={<Login />} />
-					<Route path="/hospital/login" exact element={<HospitalLoginPage />} />
-					<Route
-						path="/hospital/patient-enrolment"
-						exact
-						element={<EnrollmentPage />}
-					/>
-					<Route path="/" exact element={<LandingPage />} />
-					<Route path="/admin-landing" exact element={<AdminDashboard />} />
-					<Route path="/hospital/patient-files/all" exact element={<AllPatientFiles />} />
-					<Route path="/health-insurance-landing" exact element={<HealthInsuranceLanding />} />
-					<Route path="/dosage-reminder" exact element={<DosageReminder />} />
-					<Route path="/new-practitioner" exact element={<NewPractitioner />} />
-				</Routes>
-			</BrowserRouter>
+			{/* <HashRouter> */}
+				<BrowserRouter>
+					<Routes>
+						<Route path="/login" exact element={<Login />} />
+						<Route path="/hospital/login" exact element={<HospitalLoginPage />} />
+						<Route
+							path="/hospital/patient-enrolment"
+							exact
+							element={<EnrollmentPage />}
+						/>
+						<Route path="/" exact element={<LandingPage />} />
+						<Route path="/admin-landing" exact element={<AdminDashboard />} />
+						<Route path="/hospital/patient-files/all" exact element={<AllPatientFiles />} />
+						<Route path="/health-insurance-landing" exact element={<HealthInsuranceLanding />} />
+						<Route path="/dosage-reminder" exact element={<DosageReminder />} />
+						<Route path="/new-practitioner" exact element={<NewPractitioner />} />
+					</Routes>
+				</BrowserRouter>
+			{/* </HashRouter> */}
 		</>
 	);
 }
