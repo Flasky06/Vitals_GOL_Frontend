@@ -19,7 +19,7 @@
 .dosage-input-submit {
   background-color: var(--color-primary);
   color: #fff;
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   border-radius: 100px;
 }
 
@@ -31,6 +31,7 @@
 .dosage-reminder-form-group-main {
   display: grid;
   grid-template-columns: 0.4fr 0.5fr;
+  align-items: center;
   gap: 0.1fr;
 }
 
@@ -42,4 +43,23 @@
 .dosage-reminder-form-group-main input::placeholder {
   text-transform: capitalize;
   font-weight: bold;
+}
+
+.start-end-date div {
+  width: 45%;
+}
+
+.start-end-date div:first-of-type {
+  margin-right: 2rem;
+}
+
+.dosage-input-clear {
+  background-color: #999;
+  border-radius: 10px;
+}
+
+.dosage-input-clear,
+.dosage-input-submit {
+  display: inline-block !important;
+  width: max-content;
 }
