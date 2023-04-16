@@ -1,0 +1,45 @@
+.dosage-reminder-time {
+  border: 2px solid var(--color-primary);
+  border-radius: 10px;
+}
+
+.all-time-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.time-input-form-group {
+  width: 20rem;
+  display: grid;
+  grid-template-columns: 0.5fr 0.4fr;
+  align-items: center;
+  gap: 0.1fr;
+}
+
+.dosage-input-submit {
+  background-color: var(--color-primary);
+  color: #fff;
+  margin: 1rem auto;
+  border-radius: 100px;
+}
+
+.dosage-reminder-form {
+  width: 80vw;
+  margin: 2rem auto;
+}
+
+.dosage-reminder-form-group-main {
+  display: grid;
+  grid-template-columns: 0.4fr 0.5fr;
+  gap: 0.1fr;
+}
+
+.dosage-reminder-form-group-main input {
+  border: 2px solid var(--color-primary) !important;
+  border-radius: 10px;
+}
+
+.dosage-reminder-form-group-main input::placeholder {
+  text-transform: capitalize;
+  font-weight: bold;
+}

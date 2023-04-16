@@ -9,6 +9,8 @@ import Login from "./pages/Login/login/Login";
 import LandingPage from "./pages/LandingPage";
 import AdminDashboard from "./pages/AdminDashboard/AdminDashboard";
 import AllPatientFiles from "./pages/AdminDashboard/AllPatientFiles/AllPatientFiles";
+import HealthInsuranceLanding from "./pages/HealthInsuranceLanding";
+import DosageReminder from "./pages/DosageReminder/DosageReminder";
 
 function App() {
 	return (
@@ -23,12 +25,19 @@ function App() {
 						exact
 						element={<EnrollmentPage />}
 					/>
+					<Route path='/' exact element={<LandingPage />} />
 					<Route path='/admin-landing' exact element={<AdminDashboard />} />
 					<Route
 						path='/hospital/patient-files/all'
 						exact
 						element={<AllPatientFiles />}
 					/>
+					<Route
+						path='/health-insurance-landing'
+						exact
+						element={<HealthInsuranceLanding />}
+					/>
+					<Route path='/dosage-reminder' exact element={<DosageReminder />} />
 				</Routes>
 			</BrowserRouter>
 		</>
