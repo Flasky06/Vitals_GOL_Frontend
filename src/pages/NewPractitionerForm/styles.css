@@ -1,0 +1,35 @@
+.new-practitioner-container {
+  width: 60vw;
+  margin: 2rem auto;
+}
+
+.new-practitoner-form-group {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.new-practitoner-form-group label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.new-practitoner-form-group input,
+select {
+  border: 2px solid var(--color-primary);
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.new-practitoner-form-group input::placeholder {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.new-practitioner-form-submit {
+  display: block;
+  background-color: var(--color-primary);
+  color: #fff;
+  margin: 2rem auto;
+}

@@ -1,6 +1,18 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
-    --color-primary-light-green: #5DB075;
-    --color-light-grey: #BDBDBD;
+    --color-primary: #ff5062;
+    --color-primary-darker: crimson;
     --color-grey-01: #E8E8E8;
     --color-grey-04: #666666;
+    --color-white: #fff;
+    --color-black: #111;
+}
+
+html, body{
+    max-width: 1800px;
 }

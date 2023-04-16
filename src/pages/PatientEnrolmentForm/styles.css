@@ -1,0 +1,41 @@
+.patient-enrollment-form {
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.patient-enrollment-form-group {
+  width: 100% !important;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+}
+
+.patient-enrollment-form hr {
+  border: 1px solid #eee;
+}
+
+/* utility class for fixing the width of an input page for patient enrollment form */
+/* PEF - Patient Enrollment Form */
+.u-fix-width-PEF {
+  width: 48%;
+}
+
+.patient-enrollment-input {
+  border-radius: 5px;
+  color: #111;
+}
+
+.patient-enrollment-input::placeholder {
+  color: #111;
+  font-weight: normal;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.enrollment-form-input-guide {
+  position: absolute;
+  bottom: -2rem;
+}
+
+.patient-enrollment-form-submit {
+  background-color: var(--color-primary);
+}

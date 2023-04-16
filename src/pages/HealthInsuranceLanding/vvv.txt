@@ -1,0 +1,53 @@
+import React, { useState } from "react";
+
+function DateTimeInputs() {
+  const [numInputs, setNumInputs] = useState(0);
+
+  const handleNumChange = (event) => {
+    const num = parseInt(event.target.value);
+    if (!isNaN(num)) {
+      setNumInputs(num);
+    }
+  };
+
+  const inputs = [];
+  for (let i = 0; i < numInputs; i++) {
+    inputs.push(<input type="datetime-local" key={i} />);
+  }
+
+  return (
+    <div>
+      <label>
+        Number of Inputs:
+        <input type="number" value={numInputs} onChange={handleNumChange} />
+      </label>
+      {inputs}
+    </div>
+  );
+}
+
+export default DateTimeInputs;
+
+
+<Link
+  to="#subscribe"
+  onClick={() => {
+    const subscribeSection = document.querySelector('#subscribe');
+    subscribeSection.scrollIntoView({ behavior: 'smooth' });
+  }}
+>
+  Subscribe
+</Link>
+
+
+Jubilee Insurance Company: Jubilee Insurance is one of the leading insurance companies in Kenya that offers a wide range of health insurance products including individual health insurance, family health insurance, and corporate health insurance.
+
+AAR Insurance: AAR Insurance is another popular insurance company in Kenya that offers comprehensive health insurance plans for individuals, families, and businesses.
+
+APA Insurance: APA Insurance is a Kenyan-based insurance company that offers health insurance products, including personal accident cover, medical expenses cover, and group health insurance.
+
+CIC Insurance Group: CIC Insurance Group is one of the largest insurance companies in Kenya that provides health insurance solutions to individuals, families, and businesses.
+
+Britam Insurance: Britam Insurance is a leading insurance company in Kenya that offers a variety of health insurance plans, including individual and family health insurance, corporate health insurance, and medical cover for the elderly.
+
+UAP Old Mutual: UAP Old Mutual is a financial services company in Kenya that offers health insurance plans such as medical insurance, group health insurance, and personal accident insurance.

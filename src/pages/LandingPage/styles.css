@@ -1,0 +1,253 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+/* utilities and global */
+
+/* this is just me getting fancy with the logo, it will be replaced with a real logo once we have one */
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.logo span{
+    background-color: var(--color-primary);
+    padding: .5rem;
+    color: var(--color-white);
+    border-radius: 100px;
+}
+
+.u-text-pri-col{
+    color: var(--color-primary)!important;
+}
+
+.subtitle{
+    color: var(--color-grey-04);
+    font-size: 1.5rem;
+}
+
+.maintitle{
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.link-transparent{
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.link-filled{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.center-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* end of utilities and global */
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    z-index: 100000;
+    height: 10vh;
+}
+
+.header__link {
+  transition: all 0.5s ease;
+}
+
+.header__link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.header__link__cta-1{
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid currentColor;
+}
+/* end of header */
+
+/* start of the home section */
+.home{
+    position: relative;
+}
+
+.home-section{
+    min-height: 85vh;
+}
+
+.home-textbox > h2, .home-textbox > p{
+    color: var(--color-white);
+}
+
+.home-textbox a{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.home-textbox__paragraph-lined{
+    margin-left: 3rem;
+    position: relative;
+    color: var(--color-white);
+}
+
+.home-textbox__paragraph-lined::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 101%;
+    background-color: var(--color-white);
+    width: 2.7rem;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.contactd-cards__container{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.home-contact-card{
+    box-shadow: 0 0 5px #777;
+    width: max-content;
+    padding: 1rem;
+    background-color: var(--color-white);
+}
+
+.home-contact__icon-box{
+    --size: 3.5rem;
+    width: var(--size);
+    height: var(--size);
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.home-contact__icon-box svg{
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+    fill: var(--color-primary);
+}
+
+.home-contact-card p{
+    color: var(--color-black);
+}
+/* end of the home section */
+
+
+/* about section */
+.about__images, .about__text{
+    width: 50%;
+    padding: 1rem;
+}
+
+.about__text > p{
+    line-height: 1.8;
+}
+
+.about__ctas>:first-child{
+    margin-right: 1rem;
+}
+/* end of the about section */
+
+/* Features section */
+.features__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    justify-items: center;
+}
+
+.feature{
+    --size: 30rem;
+    width: var(--size);
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #aaa;
+}
+
+.Feature__image-container{
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.Feature__image-container img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.feature__title{
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+
+.feature__description{
+    line-height: 2;
+}
+
+.feature__link{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 5px;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.feature__link:hover{
+    transform: scale(1.2);
+}
+
+.feature__link svg{
+    --size: 2rem;
+    width: var(--size);
+    height: var(--size);
+    fill: currentColor;
+}
+
+.feature__link span{
+    transform: translateY(3px);
+}
+/* end of features section */
+
+/* subscribe section */
+.subscribe_container > *{
+    width: 45%;
+}
+
+.subscribe__campaign{
+    width: 60%;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.subscribe__form{
+    box-shadow: 0 0 5px #777;
+}
+
+.subscribe_form_input{
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.subscribe_form_input::placeholder{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.subscribe__submit{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 5px;
+}
+/* end of the subscribe section */
