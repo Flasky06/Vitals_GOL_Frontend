@@ -22,10 +22,10 @@ const AllPatientFiles = () => {
 	console.log("API Url", API_URL);
 	return (
 		<>
-			{/* <Header /> */}
+			<Header />
 			<AdminHeaderDashboard />
 
-			<div className="patient_files_container">
+			<div className='patient_files_container'>
 				{patientFiles != null &&
 					patientFiles.map((patientFile) => (
 						<PatientFile
@@ -46,8 +46,8 @@ const AllPatientFiles = () => {
 								patientFile.emergencyContact.relationship
 							}
 							emergencyContactPhoneNumber={patientFile.emergencyContact.phone}
-							takesMedication="yes"
-							medicationDescription="The patient takes a daily dose of 50mg of Zoloft, a selective serotonin reuptake inhibitor (SSRI) used to treat depression, anxiety, and other mental health conditions."
+							takesMedication='yes'
+							medicationDescription='The patient takes a daily dose of 50mg of Zoloft, a selective serotonin reuptake inhibitor (SSRI) used to treat depression, anxiety, and other mental health conditions.'
 						/>
 					))}
 			</div>
