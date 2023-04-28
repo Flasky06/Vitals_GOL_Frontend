@@ -5,7 +5,8 @@ import About from "./About/About";
 import Features from "./Features/Features";
 import Subscribe from "./Subscribe/Subscribe";
 import "./styles.css";
-import Team from "../Team/Team";
+import Team from "../Team/Index";
+import TeamIndex from "../Team/Index";
 
 const LandingPage = () => {
 	return (
@@ -14,7 +15,7 @@ const LandingPage = () => {
 			<HomeSection />
 			<About />
 			<Features />
-			<Team />
+			<TeamIndex />
 			<Subscribe />
 		</>
 	);
