@@ -12,7 +12,9 @@ const Header = () => {
 	return (
 		<header className="header sticky flex justify-between items-center px-4">
 			<h1 className="logo">
-				<span>V</span>itals
+				<Link to="/">
+					<span>V</span>itals
+				</Link>
 			</h1>
 			<nav className="flex items-center">
 				<ol className="flex">
