@@ -29,6 +29,7 @@ const AllPatientFiles = () => {
 				{patientFiles != null &&
 					patientFiles.map((patientFile) => (
 						<PatientFile
+							patientId={patientFile.id}
 							firstName={patientFile.firstName}
 							lastName={patientFile.lastName}
 							contactNumber={patientFile.phone}

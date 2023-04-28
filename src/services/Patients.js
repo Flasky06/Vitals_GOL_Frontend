@@ -30,6 +30,35 @@ export const AddPatient = async (data) => {
 		};
 	}
 };
+export const AddDosageInformation = async (data) => {
+	const Base_URL = API_URL;
+	const path = "/schedule-reminder";
+	const scheduleReminderUrl = `${Base_URL}${path}`;
+
+	console.log("scheduleReminderUrl", scheduleReminderUrl);
+	// console.log("form data", data);
+
+	try {
+		const response = await axios.post(scheduleReminderUrl, data, {
+			headers: {
+				Authorization: "Bearer " + localStorage.getItem("accessToken"),
+			},
+		});
+
+		console.log("responseData", response);
+
+		return {
+			status: response.status,
+			data: response.data,
+		};
+	} catch (error) {
+		console.log("error", error);
+		return {
+			status: error.response.status,
+			data: error.response.data,
+		};
+	}
+};
 
 export const GetPatients = async () => {
 	const Base_URL = API_URL;
