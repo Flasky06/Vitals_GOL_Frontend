@@ -12,7 +12,7 @@ const TeamIndex = () => {
 		<section className="Team mt-24 mb-12" id="team">
 			<TitleElement
 				shouldCenter={true}
-				mainTitle="the team "
+				mainTitle="The team "
 				subTitle="Team "
 			/>
 
