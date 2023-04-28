@@ -10,13 +10,14 @@ import bonface from "../../assets/images/Bonface.png";
 
 function Team() {
 	return (
-		<section className="features mt-24 " id="team">
+		<section className="features mt-24  " id="team">
+			<div className="mt=20"></div>
 			<TitleElement
 				shouldCenter={true}
-				mainTitle="The Team"
-				subTitle="Team Vitals"
+				mainTitle="Team Members"
+				subTitle="Team "
 			/>
-			<div className="container flex justify-center">
+			<div className="container flex justify-center mt-14">
 				<Card
 					imageSrc={denis}
 					title="Denis Otuoma"

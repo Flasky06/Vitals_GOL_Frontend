@@ -19,7 +19,11 @@ const Header = () => {
 			<nav className="flex items-center">
 				<ol className="flex">
 					{/* <HeaderLinkElement label="Home" /> */}
-					<HeaderLinkElement label="About" href="#about" />
+					<HeaderLinkElement
+						label="About"
+						href="#
+					"
+					/>
 
 					<HeaderLinkElement label="Features" href="#features" />
 					<HeaderLinkElement label="Subscribe" href="#subscribe" />
